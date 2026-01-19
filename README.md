@@ -21,7 +21,7 @@ All data used in this project comes from **real Windows Event Logs** generated o
 ---
 
  Data Sources & Ingestion
-Data Source: Windows Event Viewer  
+Data Source:[ Windows Event Viewer ](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/event%20viewer.png) 
 - System Logs
 - Application Logs
 - Security Logs
@@ -31,4 +31,9 @@ Ingestion Method:
 
 SPL Queries USed
 1)index =main (Displays all the events)
-2)[index=main sourcetype="csv"](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/sourcetype.png) (displays all events whose sourcetype is csv)
+2)[index=main sourcetype="csv"](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/sourcetype.png) (displays all events whose sourcetype is csv)                                                         
+3)filtering Queries
+  ->index=main sourcetype=csv Id=10016 (displays all events whose id's are 10016) 
+  ->index=main sourcetype=csv UserId="S-1-5-18" (displays all events whose USerid's are S-1-5-18) 
+  ->index=main sourcetype=csv Message=" " (displays all events whose Message is " ") 
+  
