@@ -75,7 +75,10 @@ Analyzed system logs in Splunk using keyword-based detection to identify failure
 
 ALERTS FOR MONITORING
 
-Configured a real-time Splunk alert for application crash events.Tried using email notifications but  email notifications are not supported in the free version, the alert triggers in the Splunk interface, and all actions, and configurations were tested successfully (screenshot available). This demonstrates the ability to monitor and respond to critical application failures proactively.”
+Configured a real-time Splunk alert for application crash events.Tried using email notifications but  email notifications are not supported in the free version, the alert triggers in the Splunk interface, and all actions, and configurations were tested successfully ([Alerts.png](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/email%20alerts.png) [email alerts.png](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/Alerts.png)). This demonstrates the ability to monitor and respond to critical application failures proactively.  
+
+CONCLUSION  
+This project demonstrates hands-on experience with log ingestion, SPL querying, dashboards, and alerts in Splunk. It showcases the ability to monitor system health, analyze application behavior, and respond proactively to critical events, providing practical insights into both system and security monitoring.
 
 
   
