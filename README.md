@@ -67,7 +67,7 @@ Ingestion Method:
    remote or unauthorized access activity.  
 
 
-## ANALYSIS USING SYSTEM ANS APPLICATION LOGS  
+## ANALYSIS USING SYSTEM AND APPLICATION LOGS  
  
 (i)[ index=main sourcetype=csv Level IN("Error","Warning","Information") | stats count by Level  ](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/Visual%20representation.png)  
 Analyzed Windows System logs in Splunk to categorize events by severity level (Error, Warning, Information). This query helps visualize system health, identify critical issues, and establish a baseline for normal system behavior.  
