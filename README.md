@@ -29,6 +29,8 @@ Data Source:[ Windows Event Viewer ](https://github.com/snehakdi/splunk-windows-
 Ingestion Method:
 - Splunk Enterprise → Add Data → Local Event Logs
 
+---
+
 SPL Queries Used
 
 1)index =main (Displays all the events) 
@@ -70,8 +72,8 @@ No remote access attempts
 
 No unauthorized external logins during the analysis period
 
-index=main EventID=4624 LogonType=7
-| table _time
+[index=main EventID=4624 LogonType=7
+| table _time](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/logontype.png)
 Monitored Windows Security Event ID 4624 (LogonType 7) to track workstation unlock events. This helps establish normal user behavior and confirms the absence of remote or unauthorized access activity.
  
   
