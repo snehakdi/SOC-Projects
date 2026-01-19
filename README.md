@@ -44,7 +44,8 @@ SPL Queries Used
    
 
 
-  LOGON BEHAVIOUR ANALYSIS USING SECURITY LOGS
+  LOGON BEHAVIOUR ANALYSIS USING SECURITY LOGS  
+  
 (i) [ index=main EventID=4624 | stats count by LogonType](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/Security.png)  
 
  LogonType 2 (Interactive): Local user logins via keyboard and screen.  
@@ -53,9 +54,9 @@ SPL Queries Used
  LogonType 11 (Cached Interactive): Offline logins using cached credentials  
  No LogonType 3 (Network) or LogonType 10 (RDP) events were observed.  
 
-    Security Interpretation
+  Security Interpretation  
 
-        The observed logon types indicate normal user and system behavior.
+   The observed logon types indicate normal user and system behavior.
           The absence of network and RDP logons suggests:
             - No lateral movement activity
             - No remote access attempts
