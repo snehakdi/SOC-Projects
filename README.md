@@ -34,18 +34,14 @@ Ingestion Method:
 SPL Queries Used
 
 1)index =main (Displays all the events) 
-
 2)[index=main sourcetype="csv"](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/sourcetype.png) (displays all events whose sourcetype is csv) 
 
-3)filtering Queries 
+3)Filtering Queries
 
   ->[index=main sourcetype=csv Id=10016](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/Filtering.png) (displays all events whose id's are 10016) 
-  
   ->[index=main sourcetype=csv UserId="S-1-5-18"](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/Filtering%20III.png) (displays all events whose USerid's are S-1-5-18) 
-  
   ->[index=main sourcetype=csv Message=" "](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/Filtering%20IV.png) (displays all events whose Message is " ") 
-
-  ->Visual representation of errors,warnings,information using [Pie chart](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/Visual%20representation.png)
+   ->Visual representation of errors,warnings,information using [Pie chart](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/Visual%20representation.png)
 
 
   LOGON BEHAVIOUR ANALYSIS USING SECURITY LOGS
