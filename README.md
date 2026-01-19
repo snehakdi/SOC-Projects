@@ -1,4 +1,4 @@
-# splunk-windows-log-portfolio
+# Splunk Windows Log Portfolio
 Splunk portfolio using Windows system logs
 
 
@@ -32,7 +32,7 @@ Ingestion Method:
 
 SPL Queries Used
 
-1)index =main (Displays all the events) 
+1)index =main (Displays all the events)   
 2)[index=main sourcetype="csv"](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/sourcetype.png) (displays all events whose sourcetype is csv) 
 
 3)Filtering Queries
@@ -40,7 +40,8 @@ SPL Queries Used
   -[index=main sourcetype=csv Id=10016](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/Filtering.png) (displays all events whose id's are 10016)  
   -[index=main sourcetype=csv UserId="S-1-5-18"](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/Filtering%20III.png) (displays all events whose USerid's are S-1-5-18)   
   -[index=main sourcetype=csv Message=" "](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/Filtering%20IV.png) (displays all events whose Message is " ")   
-   -Visual representation of errors,warnings,information using [Pie chart](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/Visual%20representation.png)
+   -Visual representation of errors,warnings,information using [Pie chart](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/Visual%20representation.png)  
+   
 
 
   LOGON BEHAVIOUR ANALYSIS USING SECURITY LOGS
@@ -52,24 +53,25 @@ SPL Queries Used
  LogonType 11 (Cached Interactive): Offline logins using cached credentials  
  No LogonType 3 (Network) or LogonType 10 (RDP) events were observed.  
 
- Security Interpretation
+    Security Interpretation
 
- The observed logon types indicate normal user and system behavior.
- The absence of network and RDP logons suggests:
-  - No lateral movement activity
-  - No remote access attempts
-  - No unauthorized external logins during the analysis period
+        The observed logon types indicate normal user and system behavior.
+          The absence of network and RDP logons suggests:
+            - No lateral movement activity
+            - No remote access attempts
+            - No unauthorized external logins during the analysis period
 
  (ii) [index=main EventID=4624 LogonType=7| table _time](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/logontype.png)  
    Monitored Windows Security Event ID 4624 (LogonType 7) to track workstation unlock events. This helps establish normal user behavior and confirms the absence of 
    remote or unauthorized access activity.  
 
 
- ANALYSIS USING SYSTEM ANS APPLICATION LOGS
+ ANALYSIS USING SYSTEM ANS APPLICATION LOGS  
+ 
 (i)[ index=main sourcetype=csv Level IN("Error","Warning","Information") | stats count by Level  ](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/Visual%20representation.png)  
 Analyzed Windows System logs in Splunk to categorize events by severity level (Error, Warning, Information). This query helps visualize system health, identify critical issues, and establish a baseline for normal system behavior.  
 
-(ii)[index=main sourcetype=csv Message="*fail*" OR Message="*crash*" OR Message="*shutdown*"  ](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/system%20error.png)
+(ii)[index=main sourcetype=csv Message="*fail*" OR Message="*crash*" OR Message="*shutdown*"  ](https://github.com/snehakdi/splunk-windows-log-portfolio/blob/main/screenshots/system%20error.png)   
 Analyzed system logs in Splunk using keyword-based detection to identify failure, crash, and shutdown events.  
 
 
