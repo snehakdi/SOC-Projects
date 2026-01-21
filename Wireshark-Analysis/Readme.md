@@ -14,6 +14,13 @@ Wireshark
 
 ---
 
+## Protocols Observed
+  Secure Web & Application Traffic-TLSv1.2,QUIC  
+  Network Management-TCP,ARP,UDP,IGMPv2  
+  Discovery & Connectivity-SSDP,IPv6
+
+ 
+
 
 ## Key Findings  
 
@@ -66,3 +73,8 @@ Screenshot3.png
 
   - Packet 484 (IGMPv2 Membership Report): In direct response to the query in packet 480, host 192.168.1.7 sent a Membership Report for the multicast group 
     239.255.255.250. This confirms that the host is active and wishes to continue receiving traffic for that group .  
+
+
+## Conclusion  
+
+Through this analysis, I successfully identified various types of network traffic, ranging from secure web browsing to internal device communication. I was able to distinguish between normal activity and a minor connection issue where one device could not find another on the network.This analysis was performed on a secure personal system, resulting in a clean log with no malicious threats or security warnings. The traffic observed represents a healthy baseline of standard web browsing and local network discovery. This project demonstrates my ability to use Wireshark to verify that network activity is legitimate and that all protocols are functioning as expected.
