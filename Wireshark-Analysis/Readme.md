@@ -36,7 +36,7 @@ Wireshark
   - Packets 50–52 (IPv6 TLS Session): Ongoing encrypted communication between a local host and a remote server, characterized by "Application Data" exchanges and 
    TCP Acknowledgments.
 
-  -Packets 53–54 (External TCP Maintenance): Background TCP traffic with a Google-owned server, maintaining a persistent connection.
+  - Packets 53–54 (External TCP Maintenance): Background TCP traffic with a Google-owned server, maintaining a persistent connection.
 
   -Packet 55 (Connection Failure): A TCP Retransmission from 192.168.1.7 attempting to reach 192.168.1.6 on port 9997. The lack of a response triggers a timeout.
 
