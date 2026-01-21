@@ -16,9 +16,9 @@ This portfolio demonstrates the mapping of the Wireshark log analysis project MI
 
 ##  Evidence (Screenshots)
 
-* `screenshots/screenshot1.png` – TCP, UDP, TLS overview
-* `screenshots/screenshot2.png` – TCP retransmission, ARP, SSDP
-* `screenshots/screenshot3.png` – QUIC, IGMP, multicast traffic
+* `[screenshots/screenshot1.png](https://github.com/snehakdi/Security-Projects/blob/main/Wireshark-Analysis/Screenshots/screenshot1.png)` – TCP, UDP, TLS overview
+* `[screenshots/screenshot2.png](https://github.com/snehakdi/Security-Projects/blob/main/Wireshark-Analysis/Screenshots/screenshot2.png)` – TCP retransmission, ARP, SSDP
+* `[screenshots/screenshot3.png](https://github.com/snehakdi/Security-Projects/blob/main/Wireshark-Analysis/Screenshots/screenshot3.png)` – QUIC, IGMP, multicast traffic
 
 ---
 
@@ -45,7 +45,7 @@ This portfolio demonstrates the mapping of the Wireshark log analysis project MI
 | QUIC encrypted traffic     | Command & Control        | T1095 – Non-Application Layer Protocol |
 
 
-> **Result:** No malicious intent detected; mapping demonstrates threat awareness and SOC methodology.
+> **Result:** No malicious intent detected
 
 ---
 
