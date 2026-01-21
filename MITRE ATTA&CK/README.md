@@ -1,20 +1,20 @@
 #  MITRE ATT&CK – Wireshark Network Analysis 
 
-##  Project Summary
+###  Project Summary
 
 This portfolio demonstrates the mapping of the Wireshark log analysis project MITRE ATTA&CK framework.
 
+---
 
-
-##  Tools & Environment
+###  Tools & Environment
 
 * Wireshark
 * TCP/IP, TLS, QUIC, ARP, SSDP, IGMP
 * MITRE ATT&CK Framework
 
+---
 
-
-##  Evidence (Screenshots)
+###  Evidence (Screenshots)
 
 * [Screenshot1](https://github.com/snehakdi/Security-Projects/blob/main/Wireshark-Analysis/Screenshots/screenshot1.png) – TCP, UDP, TLS overview
 * [Screenshot2](https://github.com/snehakdi/Security-Projects/blob/main/Wireshark-Analysis/Screenshots/screenshot2.png) – TCP retransmission, ARP, SSDP
@@ -22,9 +22,9 @@ This portfolio demonstrates the mapping of the Wireshark log analysis project MI
 
 ---
 
-##  Observations & Analysis
+### Observations & Analysis
 
-### Network Behaviors Identified
+#### Network Behaviors Identified
 
 * TCP SYN attempts and retransmissions
 * Encrypted TLSv1.2 and QUIC traffic over port 443
@@ -34,7 +34,7 @@ This portfolio demonstrates the mapping of the Wireshark log analysis project MI
 
 ---
 
-## 🧭 MITRE ATT&CK Mapping
+### MITRE ATT&CK Mapping
 
 | Observed Activity          | Tactic                   | Technique                              |
 | -------------------------- | ------------------------ | -------------------------------------- |
@@ -50,7 +50,7 @@ This portfolio demonstrates the mapping of the Wireshark log analysis project MI
 ---
 
 
-## 📝 Key Findings
+### Key Findings
 
 * Traffic aligns with legitimate system behavior
 * MITRE ATT&CK mapping enables clear communication
@@ -59,6 +59,6 @@ This portfolio demonstrates the mapping of the Wireshark log analysis project MI
 
 ---
 
-##  Conclusion
+###  Conclusion
 
 This project reflects **real workflows**—observe, analyze, map to MITRE, and report—using safe, real-world data from a clean environment.
