@@ -4,7 +4,7 @@
 
 This portfolio demonstrates the mapping of the Wireshark log analysis project MITRE ATTA&CK framework.
 
----
+
 
 ##  Tools & Environment
 
@@ -12,13 +12,13 @@ This portfolio demonstrates the mapping of the Wireshark log analysis project MI
 * TCP/IP, TLS, QUIC, ARP, SSDP, IGMP
 * MITRE ATT&CK Framework
 
----
+
 
 ##  Evidence (Screenshots)
 
-* `[screenshots/screenshot1.png](https://github.com/snehakdi/Security-Projects/blob/main/Wireshark-Analysis/Screenshots/screenshot1.png)` – TCP, UDP, TLS overview
-* `[screenshots/screenshot2.png](https://github.com/snehakdi/Security-Projects/blob/main/Wireshark-Analysis/Screenshots/screenshot2.png)` – TCP retransmission, ARP, SSDP
-* `[screenshots/screenshot3.png](https://github.com/snehakdi/Security-Projects/blob/main/Wireshark-Analysis/Screenshots/screenshot3.png)` – QUIC, IGMP, multicast traffic
+* [Screenshot1](https://github.com/snehakdi/Security-Projects/blob/main/Wireshark-Analysis/Screenshots/screenshot1.png) – TCP, UDP, TLS overview
+* [Screenshot2](https://github.com/snehakdi/Security-Projects/blob/main/Wireshark-Analysis/Screenshots/screenshot2.png) – TCP retransmission, ARP, SSDP
+* [Screenshot3.png](https://github.com/snehakdi/Security-Projects/blob/main/Wireshark-Analysis/Screenshots/screenshot.png) – QUIC, IGMP, multicast traffic
 
 ---
 
